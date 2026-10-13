@@ -16,30 +16,48 @@ package part06;
 
 public class Switches {
     public static void main(String[] args) {
+        //this assignsn the string value of pizza to the variable day
         String day = "Pizza";
+        //this is a switch statement that will ask in regards of day
         switch (day) {
+            // this line is asking if day is sunday
             case "Sunday":
+                //if this is true then line will print what is in the quotes
                 System.out.println("It is Sunday");
+                // break ends the case until a new one is started without it once the day is found the code would keep running
                 break;
             case "Monday":
+                //if this is true then line will print what is in the quotes
                 System.out.println("It is Monday");
+                // break ends the case until a new one is started without it once the day is found the code would keep running
                 break;
             case "Tuesday":
+                //if this is true then line will print what is in the quotes
                 System.out.println("It is Tuesday");
+                // break ends the case until a new one is started without it once the day is found the code would keep running
                 break;
             case "Wednesday":
+                //if this is true then line will print what is in the quotes
                 System.out.println("It is Wednesday");
+                // break ends the case until a new one is started without it once the day is found the code would keep running
                 break;
             case "Thursday":
+                //if this is true then line will print what is in the quotes
                 System.out.println("It is Thursday");
+                // break ends the case until a new one is started without it once the day is found the code would keep running
                 break;
             case "Friday":
+                //if this is true then line will print what is in the quotes
                 System.out.println("It is Friday");
+                // break ends the case until a new one is started without it once the day is found the code would keep running
                 break;
             case "Saturday":
+                //if this is true then line will print what is in the quotes
                 System.out.println("It is- Saturday");
+                // break ends the case until a new one is started without it once the day is found the code would keep running
                 break;
             default:
+                // default means if all of the above are false then this is what will print
                 System.out.println(day + " is not a day");
         }
     }

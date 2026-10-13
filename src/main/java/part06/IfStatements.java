@@ -16,14 +16,27 @@ package part06;
 
 public class IfStatements {
     public static void main(String[] args) {
+        //the line below assigns in age to 13
         int age = 13;
+        // the line below ask if then has a conditional statement in parentheses age greater than or equal to 75
         if (age >= 75) {
+            // if the line about is true the this line of code will excute printing out Ok boomer
             System.out.println("OK boomer!");
+            /* this line goes along with the if statement but says else if which is the same as if but this has
+            a different conditonal this says if age greater than of equal to 18 this is excuted after asking if its
+            greater than 75 because if we did this first you could be 55 and be called an adult and we wouldnt get to
+            ok boomer
+             */
         } else if (age >= 18) {
+            // if the line above is true this line will print you are an adult
             System.out.println("You are an adult!");
+            //this line checks to see if you are older or equal to 13
         } else if (age >= 13) {
+            //if the line above is true then this line will print out you are a teenager
                 System.out.println("You are a teenager!");
+                //else mean that if none of these apply then this is the last case scenario
         } else {
+            // and if we reach the last case scenario then this line will print you are not an adult
             System.out.println("You are not an adult!");
         }
     }
