@@ -8,21 +8,31 @@ package part06;
 
 public class InClass {
     public static void main(String[] args) {
-
-        // STEP 1 — we call our method here, then write a switch together.
-
+        System.out.println(batteryStatus(100));
+        System.out.println(batteryStatus(60));
+        System.out.println(batteryStatus(15));
+        String mode = "CRUISE";
 
 
         // STEP 2 — fix the bugs. Each line below has ONE mistake.
         // Move ONE line at a time above the /* line, so Java sees it.
         // Read the red error. Fix it. Run it. Then do the next line.
-        /*
-        if (mode = "TURN") System.out.println("Turning");
+
+        if (mode.equals("TURN")) System.out.println("Turning");
         else System.out.println("Stopped");
-        if mode.equals("TURN") System.out.println("Turning");
-        */
+        if (mode.equals("TURN")) System.out.println("Turning");
+
     }
 
     // STEP 1 (continued) — we write the batteryStatus method here, outside main.
+    static String batteryStatus(int battery) {
+        if (battery >= 100) {
+            return "Full";
+        } else if (battery <= 20) {
+            return "ok";
+        } else {
+            return "low";
+        }
+    }
 
 }
