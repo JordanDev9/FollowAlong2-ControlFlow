@@ -16,20 +16,34 @@ import java.util.Scanner;
 
 public class LogicalOperators {
     public static void main(String[] args) {
+        // this sets the value of temp to 25
         int temp = 25;
+        // this line ask if temp is greater than 30
         if (temp > 30) {
+            // if it is this line of code will execute printing whats inside the quotes
             System.out.println("Its hot outside");
+            // if its not true it will ask else if temp is greater than or equal to 20 and temp is less than or equal to 30
         } else if(temp >= 20 && temp <= 30){
+            // if both are true this line will excute printing whats insde the quotes
             System.out.println("Its warm outside");
+            // this line ask if temp is anything else than do
         }else{
+            // whatever is inside the qutoes because this is the last case scernario with no conditions
             System.out.println("Its cold outside ");
         }
+        // this line creates the scanner object
         Scanner scanner = new Scanner(System.in);
+        // this line prints out whats inside the quotes and is used to ask for a user input
         System.out.println("You are playing a game! Press q or Q to quit");
+        // this line stores the user input inside of the variable respones
         String response = scanner.next();
+        // this line ask if respones is equal to q or Q
         if (response.equals("q") || response.equals("Q")) {
+            // if it does then this lines prints whats inside the qutoes
             System.out.println("You quit the game");
+            // this line says if it doesnt equal q or Q then do
         } else {
+            // whatever is inside the quotes because this is the last case scenario with no conditions
             System.out.println("You are still playing the game *pew pew*");
         }
     }

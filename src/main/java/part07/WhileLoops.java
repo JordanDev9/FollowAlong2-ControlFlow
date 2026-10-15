@@ -18,16 +18,26 @@ import java.util.Scanner;
 
 public class WhileLoops {
     public static void main(String[] args) {
+        // this line creates scanner so that we can get user inputs
         Scanner scanner = new Scanner(System.in);
+        // this line assigns a empty string to the variable name
         String name = "";
+        // this line creates a loop with the function is blank so while something is blank the loop repeats
         while (name.isBlank()) {
+            // this line is printing out what is inside the quotes but we use this to ask for a user input
             System.out.print("Enter your name: ");
+            // this line takes the user input and stores in into a variable in this case the variable is name
             name = scanner.nextLine();
         }
+        // this line prints hello and whatever the user inputed name is
         System.out.println("Hello " + name);
+        // this a do while loop
         do {
+            // tnhis line ask for a user input enter your name:
             System.out.print("Enter your name: ");
+            // this line takes the user input and stores it in a variable called name
             name = scanner.nextLine();
+            // this is the condition that makes it do while (whatever the condition is) and in this case its .isblank()
         } while (name.isBlank());
     }
 
