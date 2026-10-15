@@ -11,5 +11,15 @@ package part07;
 // You will need to type the main method yourself. That is the point.
 
 public class Warmup {
+    public static void main(String[] args) {
+        int temp = 72;
+        if (temp >= 80) {
+            System.out.println("Shorts Weather");
+        } else if (temp >= 60) {
+            System.out.println("Hoodie weather");
+        } else {
+            System.out.println("Coat Weather");
+        }
+    }
 
 }
