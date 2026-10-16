@@ -29,17 +29,17 @@ public class GuessingGame {
         // this line sets a value fo count so we cn track the amount of attempts it takes to guess the number
         int count = 1;
         // this is the loop that allow you to keep guessing the number because the loop doesnt stop until your guess is equal to num
-        while(yourGuess != num){
+        while(yourGuess != num) {
             // this line is used to tell the user what to input
             System.out.println("Enter your Guess: ");
             // this line takes the user input and stores it the variable your guess
             yourGuess = scanner.nextInt();
             // this line says that if your guess if less the num
-            if (yourGuess < num){
+            if (yourGuess < num) {
                 // then you need to guess a higher number which is why this line prints higher
                 System.out.println("Higher");
                 // this line says if your guess is higher than num then
-            }else if (yourGuess > num){
+            } else if (yourGuess > num) {
                 // your guess needs to be a lower number which is why this line print lower
                 System.out.println("Lower");
 
@@ -47,8 +47,11 @@ public class GuessingGame {
             //this line is inside the while loop but outside the if statements to count the amount of tries
             count += 1;
         }
-        /*
-       
+        /*these lines are outside the while loop because they wont print until you get out the while loop
+        and they print what is inside the quotes and for anything that is not inside quotes it prints
+        the value that they are holding which varies because num is random and count is dependant on you.
+         */
+
         System.out.println("You guess correct the number is " + num);
         System.out.println("It took you " + count + " attempts");
     }
