@@ -10,6 +10,16 @@ package part09;
 // Replace the line marked YOUR CODE so the method returns the right answer.
 
 public class Challenge {
+    public static void main(String[] args) {
+        System.out.println(ticketPrice(3, false));
+        System.out.println(ticketPrice(70, true));
+        System.out.println(ticketPrice(19, true));
+        System.out.println(ticketPrice(30, false));
+        System.out.println(letterGrade(95));
+        System.out.println(letterGrade(80));
+        System.out.println(letterGrade(59));
+
+    }
 
     // The price of a movie ticket, in dollars.
     //   Younger than 5          -> 0  (free)
@@ -21,8 +31,18 @@ public class Challenge {
     // ticketPrice(19, true)  should return 7
     // ticketPrice(30, false) should return 10
     public static int ticketPrice(int age, boolean student) {
-        return 0;   // YOUR CODE
+        if (age < 5) {
+            return 0;
+        } else if (age >= 65) {
+            return 5;
+        } else if (student) {
+            return 7;
+        } else {
+            return 10;
+        }
+
     }
+
 
     // The letter grade for a score.
     //   90 or more -> "A"    80 or more -> "B"    70 or more -> "C"
@@ -31,6 +51,16 @@ public class Challenge {
     // letterGrade(80) should return "B"
     // letterGrade(59) should return "F"
     public static String letterGrade(int score) {
-        return "";   // YOUR CODE
+        if (score > 90){
+            return "A";
+        }else if (score > 80){
+            return "B";
+        }else if (score > 70){
+            return "C";
+        }else if(score > 60) {
+            return "D";
+        }else{
+            return "F";
+        }
     }
 }
